@@ -5,7 +5,7 @@ def my_all?(collection)
   collection.each do |ele|
     block_returned << yield(ele)
   end
-  block_returned.all?{|e|if e ? true : false}
+  block_returned.all?{|e| e ? true : false}
 end
 
 # p my_all?([1,2,3]) {|i| i < 2}
