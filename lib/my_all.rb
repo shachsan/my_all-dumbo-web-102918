@@ -6,3 +6,5 @@ def my_all?(collection)
     block_returned << yield ele
   end
 end
+
+p my_all?([1,2,3]) {|1| 1 < 2}
