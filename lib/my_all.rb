@@ -8,4 +8,4 @@ def my_all?(collection)
   block_returned
 end
 
-p my_all?([1,2,3]) {|i| 1 < 2}
+p my_all?([1,2,3]) {|i| i < 2}
